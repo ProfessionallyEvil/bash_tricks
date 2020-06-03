@@ -82,9 +82,9 @@ Vagrant.configure("2") do |config|
           sudo adduser vagrant docker
 
           # look at issue #1 for this repo
-          # printf 'installing snap version of docker' && echo
+          # printf 'installing snap version of docker\n'
           # snap install docker
-          # printf 'waiting for docker to start' && echo
+          # printf 'waiting for docker to start\n'
           # sleep 5
 
           # TODO: fix snap version
