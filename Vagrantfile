@@ -1,6 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+$shell_script = 
+
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
@@ -63,8 +65,67 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   apt-get update
-  #   apt-get install -y apache2
-  # SHELL
+  config.vm.provision "main", type: "shell" do |s|
+    s.env = {
+      :DEBUG => "true"
+    }
+    s.inline = <<-SHELL
+      # to better understand this go here: https://elrey.casa/bash/scripting/harden
+      set -${-//[s]/}eu${DEBUG+xv}o pipefail
+
+      function sys_prep(){
+        if command -v docker ; then
+          echo 'Docker already exists'
+        else
+          # prepping system for docker (needed for snap version)
+          sudo addgroup --system docker
+          sudo adduser vagrant docker
+
+          # look at issue #1 for this repo
+          # printf 'installing snap version of docker' && echo
+          # snap install docker
+          # printf 'waiting for docker to start' && echo
+          # sleep 5
+
+          # TODO: fix snap version
+          # read this as to why it is ok: https://blog.elreydetoda.site/curl-bad/ (I did all the steps)
+          curl -fsSL 'get.docker.com' | bash
+        fi
+
+        # pull container image so user doesn't have to wait
+        docker pull bash
+      }
+      function repo_setup(){
+        repo_url='https://github.com/ProfessionallyEvil/bash_tricks'
+        local_folder="${repo_url##*/}"
+        if [[ -d "${local_folder}" ]] ; then
+          echo "repo already exists"
+        else
+          git clone "${repo_url}"
+        fi
+        pushd "${local_folder}" || exit 1
+        full_path="$(pwd -P)"
+        git pull
+        popd
+      }
+      function bash_aliases(){
+        printf 'alias pe-bash="docker container run --rm -it -v %s:/bash_tricks -w /bash_tricks bash -- ; ch_perms"' "${full_path}" > ~vagrant/.bash_aliases
+        add_newline ~vagrant/.bash_aliases
+        type ch_perms | tail -n +2 >> ~vagrant/.bash_aliases
+      }
+      function ch_perms(){
+        sudo chown -R vagrant:vagrant ~vagrant
+      }
+      function add_newline(){
+        echo >> "${1}"
+      }
+      function main(){
+        sys_prep
+        repo_setup
+        bash_aliases
+        ch_perms
+      }
+      main
+    SHELL
+  end
 end
