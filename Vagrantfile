@@ -107,13 +107,16 @@ Vagrant.configure("2") do |config|
         popd
       }
       function bash_aliases(){
-        printf 'alias pe-bash="docker container run --rm -it -v %s:/bash_tricks -w /bash_tricks bash -- ; ch_perms"' "${full_path}" > ~vagrant/.bash_aliases
+        printf 'alias pe-bash="if ! docker container run --name proevil-bash -it -v %s:/bash_tricks -w /bash_tricks bash -- 2>/dev/null ; then docker container start -ia proevil-bash ; fi ; ch_perms"' "${full_path}" > ~vagrant/.bash_aliases
+        add_newline ~vagrant/.bash_aliases
+        printf 'alias pe-cleanup="docker container rm proevil-bash"' >> ~vagrant/.bash_aliases
         add_newline ~vagrant/.bash_aliases
         type ch_perms | tail -n +2 >> ~vagrant/.bash_aliases
       }
       function ch_perms(){
         sudo chown -R vagrant:vagrant ~vagrant
       }
+      # TODO: issue #2 is why I have to use/have this function
       function add_newline(){
         echo >> "${1}"
       }
