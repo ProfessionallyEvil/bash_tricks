@@ -81,13 +81,13 @@ Vagrant.configure("2") do |config|
           sudo addgroup --system docker
           sudo adduser vagrant docker
 
-          # look at issue #1 for this repo
-          # printf 'installing snap version of docker\n'
+          # TODO: issue #2 
+          # printf 'installing snap version of docker' && echo
+          # TODO: issue #1 for this repo as to why the snap install is commented out
           # snap install docker
-          # printf 'waiting for docker to start\n'
+          # printf 'waiting for docker to start' && echo
           # sleep 5
 
-          # TODO: fix snap version
           # read this as to why it is ok: https://blog.elreydetoda.site/curl-bad/ (I did all the steps)
           curl -fsSL 'get.docker.com' | bash
         fi
