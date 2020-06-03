@@ -67,7 +67,7 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "main", type: "shell" do |s|
     s.env = {
-      :DEBUG => "true"
+      # :DEBUG => "true"
     }
     s.inline = <<-SHELL
       # to better understand this go here: https://elrey.casa/bash/scripting/harden
