@@ -14,4 +14,5 @@ If you choose this install method I will **NOT** support it, because there is to
 
 ### Caveat
 
+<!-- TODO: issue #5: add link for the advanced type of issue that they can submit once templates are created -->
 If there is something that should work based on what you can deduce and there is a problem (maybe with what is supported in your current bash version), feel free to submit an issue but it will be marked wontfix, unless I decide to investigate more and change the label because it is interesting to me. 😁
