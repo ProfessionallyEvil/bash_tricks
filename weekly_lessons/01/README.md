@@ -1,6 +1,6 @@
-# Week 01 (Prompts, prompts, PrOmPtS)
+# Week 01 (Prompts, prompts, and PrOmPtS)
 
-- [Week 01 (Prompts, prompts, PrOmPtS)](#week-01-prompts-prompts-prompts)
+- [Week 01 (Prompts, prompts, and PrOmPtS)](#week-01-prompts-prompts-and-prompts)
   - [Pre-reqs](#pre-reqs)
   - [Why](#why)
   - [Examples](#examples)
