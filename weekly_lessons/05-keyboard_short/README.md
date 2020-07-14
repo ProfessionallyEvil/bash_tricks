@@ -46,5 +46,7 @@ set -o vi
   - **note:** not the best format, but appears to not collide with possible terminal key sequences (at least on urxvt)
 - [How to Navigate Linux Command Line Using Keybinding (Linux Ctrl Command Examples)](https://www.thegeekstuff.com/2014/05/linux-keybindings/)
   - **note:** really nice format, but appears to collide with possible terminal key sequences (at least on urxvt)
+- [enable Ctrl+L to clear screen when 'set -o vi' is set](https://unix.stackexchange.com/questions/104094/is-there-any-way-to-enable-ctrll-to-clear-screen-when-set-o-vi-is-set#answer-104101)
+- [How to be productive with Vim environment and stay mouseless](https://nosarthur.github.io/coding/2020/06/27/vim-productivity.html#--bash-in-vim-mode)
 - tool(s) used during recording:
   - [screenkey](https://www.linuxuprising.com/2020/05/screenkey-is-tool-that-shows-pressed.html)
