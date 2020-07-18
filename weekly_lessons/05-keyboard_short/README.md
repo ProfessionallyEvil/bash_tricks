@@ -5,6 +5,7 @@
   - [Why](#why)
   - [Examples](#examples)
   - [Resources](#resources)
+  - [Video](#video)
 
 ## Pre-reqs
 
@@ -50,3 +51,7 @@ set -o vi
 - [How to be productive with Vim environment and stay mouseless](https://nosarthur.github.io/coding/2020/06/27/vim-productivity.html#--bash-in-vim-mode)
 - tool(s) used during recording:
   - [screenkey](https://www.linuxuprising.com/2020/05/screenkey-is-tool-that-shows-pressed.html)
+
+## Video
+
+[![video pic](https://img.youtube.com/vi/I7QMLSmibLw/0.jpg)](https://youtu.be/I7QMLSmibLw)
