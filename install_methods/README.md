@@ -21,3 +21,7 @@ I have created a few bash aliases to help aid in running docker.
 2. `pe-cleanup` - this is used to remove the previously created container in case you are having issues with your environment. You can then run the `pe-bash` command afterwards to re-setup your environment.
 
 Any other aliases I create, and might not have documented will be prepended with `pe-`, so to enumerate them you can type `pe-` and then hit the `<TAB>` key. That will try and tab complete anything in your path that starts with `pe-`.
+
+## Video
+
+[![video pic](https://img.youtube.com/vi/mfP8R1yr80A/2.jpg)](https://youtu.be/mfP8R1yr80A)
