@@ -5,6 +5,7 @@
   - [Why](#why)
   - [Examples](#examples)
   - [Resources](#resources)
+  - [Video](#video)
 
 ## Pre-reqs
 
@@ -53,3 +54,7 @@ set
 
 - [cd man page](https://ss64.com/bash/cd.html)
 - [modified hardend scripting env](https://elrey.casa/bash/scripting/harden)
+  
+## Video
+
+[![video pic](https://img.youtube.com/vi/kd6VitblTwU/0.jpg)](https://youtu.be/kd6VitblTwU)
