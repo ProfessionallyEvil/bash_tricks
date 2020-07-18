@@ -5,6 +5,7 @@
   - [Why](#why)
   - [Examples](#examples)
   - [Resources](#resources)
+  - [Video](#video)
 
 ## Pre-reqs
 
@@ -62,3 +63,7 @@ alias -p
 
 - [my vagrant aliases (nesting)](https://github.com/elreydetoda/all-linux-tings)* (work in progress)
 - [github dotfiles](https://github.com/search?q=dotfiles)
+
+## Video
+
+[![video pic](https://img.youtube.com/vi/w9ao8QzqkJU/0.jpg)](https://youtu.be/w9ao8QzqkJU)
