@@ -5,6 +5,7 @@
   - [Why](#why)
   - [Examples](#examples)
   - [Resources](#resources)
+  - [Video](#video)
 
 ## Pre-reqs
 
@@ -29,3 +30,7 @@
 - [Bash Cookbook](http://bashcookbook.com/)
   - [code](https://github.com/vossenjp/bashcookbook-examples/blob/master/ch16/prompts)
   - Main Chapter(s): 1.3 & 16.2
+
+## Video
+
+[![video pic](https://img.youtube.com/vi/W75PAorGS0s/0.jpg)](https://youtu.be/W75PAorGS0s)
