@@ -5,6 +5,7 @@
   - [Why](#why)
   - [Examples](#examples)
   - [Resources](#resources)
+  - [Video](#video)
 
 ## Pre-reqs
 
@@ -40,3 +41,7 @@ type testingz
 
 - [Bash Cookbook](http://bashcookbook.com/)
   - Main Chapter(s): 1.5
+  
+## Video
+
+[![video pic](https://img.youtube.com/vi/XiNrBIoZRFI/0.jpg)](https://youtu.be/XiNrBIoZRFI)
