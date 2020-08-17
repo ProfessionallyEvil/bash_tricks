@@ -1,6 +1,6 @@
-# Week 05 ( runtime keyboard shortcuts )
+# Week 06 ( runtime keyboard shortcuts )
 
-- [Week 05 ( runtime keyboard shortcuts )](#week-05--runtime-keyboard-shortcuts-)
+- [Week 06 ( runtime keyboard shortcuts )](#week-05--runtime-keyboard-shortcuts-)
   - [Pre-reqs](#pre-reqs)
   - [Why](#why)
   - [Examples](#examples)
