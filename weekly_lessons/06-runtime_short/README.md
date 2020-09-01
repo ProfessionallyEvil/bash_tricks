@@ -5,6 +5,7 @@
   - [Why](#why)
   - [Examples](#examples)
   - [Resources](#resources)
+  - [Video](#video)
 
 ## Pre-reqs
 
@@ -49,3 +50,7 @@ Ctrl+C # kill nmap scan
 - [(FreeBSD) The Power Of CTRL+T](https://blog.danielisz.org/2018/06/21/the-power-of-ctrlt/)
 - tool(s) used during recording:
   - [nmap](https://nmap.org/)
+
+## Video
+
+[![video pic](https://img.youtube.com/vi/Enq3qT9fCWA/0.jpg)](https://youtu.be/Enq3qT9fCWA)
