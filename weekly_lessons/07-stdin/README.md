@@ -12,7 +12,7 @@
   - [video](https://youtu.be/mfP8R1yr80A)
   - [writen instruction](/install_methods/)
 - programs (optional, but recommended)
-  - nmap
+  - recon-ng
 
 ## Why
 
