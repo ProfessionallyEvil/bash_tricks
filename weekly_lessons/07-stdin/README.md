@@ -100,7 +100,7 @@ echo "${array[1]}"
   - [https://blog.elreydetoda.site/curl-bad/](https://blog.elreydetoda.site/curl-bad/)
   - [https://blog.elreydetoda.site/cool-shell-tricks/#bashscriptinggrepheredocwipaddresses](https://blog.elreydetoda.site/cool-shell-tricks/#bashscriptinggrepheredocwipaddresses)
   - [https://github.com/koalaman/shellcheck/wiki/SC2207](https://github.com/koalaman/shellcheck/wiki/SC2207)
-  - [clear bash environment variables](https://blog.elreydetoda.site/cool-shell-tricks/#bashscriptingmisc)]
+  - [clear bash environment variables](https://blog.elreydetoda.site/cool-shell-tricks/#bashscriptingmisc)
   - [aws mapfile command](https://blog.elreydetoda.site/cool-shell-tricks/#bashawscloudformationparameteroverrides)
 - tool(s) used during recording:
   - [recon-ng](https://github.com/lanmaster53/recon-ng)
