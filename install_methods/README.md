@@ -24,4 +24,4 @@ Any other aliases I create, and might not have documented will be prepended with
 
 ## Video
 
-[![video pic](https://img.youtube.com/vi/mfP8R1yr80A/2.jpg)](https://youtu.be/mfP8R1yr80A)
+[![video pic](https://img.youtube.com/vi/mfP8R1yr80A/0.jpg)](https://youtu.be/mfP8R1yr80A)
