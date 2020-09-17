@@ -10,7 +10,10 @@
 ## Pre-reqs
 
 - bash setup
-  - [video](https://youtu.be/mfP8R1yr80A)
+  - video
+
+    [![video pic](https://img.youtube.com/vi/mfP8R1yr80A/0.jpg)](https://youtu.be/mfP8R1yr80A)
+
   - [writen instruction](/install_methods/)
 - programs (optional, but recommended)
   - nmap
