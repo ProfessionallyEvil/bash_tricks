@@ -45,3 +45,4 @@ time nmap scanme.nmap.org
 
 - [User CPU time vs System CPU time?](https://stackoverflow.com/questions/4310039/user-cpu-time-vs-system-cpu-time)
 - Subshell warning ⬅️ placeholder
+- [nmap runtime commands](../06-runtime_short/)
