@@ -36,6 +36,9 @@ time sleep 3
 time echo hello world | tr ' ' '\n'
 time echo hello world && echo not now
 time ( echo hello world && echo not now )
+apk add nmap --no-cache
+nmap scanme.nmap.org
+time nmap scanme.nmap.org
 ```
 
 ## Resources
