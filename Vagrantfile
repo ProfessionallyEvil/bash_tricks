@@ -57,6 +57,19 @@ Vagrant.configure("2") do |config|
   #   # Customize the amount of memory on the VM:
   #   vb.memory = "1024"
   # end
+  config.vm.provider :libvirt do |lv, override|
+    override.vm.box = "generic/ubuntu2004"
+    override.vm.allowed_synced_folder_types = [:libvirt, :nfs]
+    override.vm.synced_folder ".", "/vagrant", nfs_udp: false
+    override.vm.provision 'fix-dns', type: "shell", run: 'never' do |script|
+      script.inline = <<-SHELL
+        sudo sed -i -e '/nameservers:/d' -e '/addresses:/d' /etc/netplan/01-netcfg.yaml
+        sudo netplan generate && sudo netplan apply
+        sudo sed -i 's/^[[:alpha:]]/#&/' /etc/systemd/resolved.conf
+        sudo systemctl restart systemd-resolved.service
+      SHELL
+    end
+  end
   #
   # View the documentation for the provider you are using for more
   # information on available options.
